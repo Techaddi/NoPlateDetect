@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Detection</title>
+</head>
+<body>
+    <h1>Upload Vehicle Image</h1>
+    <form action="{% url 'upload_image' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

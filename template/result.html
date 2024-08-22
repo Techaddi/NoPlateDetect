@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Result</title>
+</head>
+<body>
+    <h1>Detection Result</h1>
+    <img src="{{ image_url }}" alt="Vehicle Image">
+    <p>Detected Plate Number: {{ plate_number }}</p>
+    <a href="{% url 'home' %}">Go Back</a>
+</body>
+</html>
